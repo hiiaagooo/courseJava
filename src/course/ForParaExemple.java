@@ -6,6 +6,8 @@ package course;
 import java.util.Scanner;
 
 public class ForParaExemple {
+	
+	// UTILIZAR 'FOR' apenas quando se souber a quantidade de repetições a serem feitas.
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -16,7 +18,7 @@ public class ForParaExemple {
 		int sum = 0; // sum = variavel que vai guardar a soma total.
 		
 		// for
-		for (int i = 1; i <= n; i++) {
+		for (int i = 1; i <= n; i++) { // i++: i = 1 + 1  (*confirmar*)
 			System.out.println("Value #" + i + ":");
 			int x = sc.nextInt();
 			sum += x;
