@@ -51,7 +51,6 @@ public class Program2 {
 		System.out.println(product);
 		
 		sc.close();
-	
 	}
 
 }
