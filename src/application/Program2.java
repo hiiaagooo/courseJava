@@ -31,6 +31,25 @@ public class Program2 {
 		// exibir utilizando toString (o java entende apenas o "product" - implicitamente ele chama o 'toString'
 		System.out.println(product);
 		
+		// Adicionando quantidades.
+		System.out.println();
+		System.out.print("Entry to products quantity to add:");
+		int quantity = sc.nextInt();
+		product.addProducts(quantity);
+		
+		// valor atualizado
+		System.out.println();
+		System.out.println(product);
+		
+		// Removendo quantidades.
+		System.out.println();
+		System.out.print("Entry to products quantity to remove:");
+		quantity = sc.nextInt(); //reaproveitando variável JÁ DECLARADA anteriormente
+		product.removeProducts(quantity);
+		// valor atualizado
+		System.out.println();
+		System.out.println(product);
+		
 		sc.close();
 	
 	}
