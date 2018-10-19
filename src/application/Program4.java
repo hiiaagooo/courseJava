@@ -33,13 +33,14 @@ public class Program4 {
 		} else {
 			System.out.println("Its, not ok!");
 		}
+		
 		//verificar nota2 e nota3
 		if (notes.anotherNote()) {
 			System.out.println("it's ok!");
 		} else {
 			System.out.println("Its, not ok!");
 		}
-		
+
 		// IMPLEMENTAR MEDIA GERAL
 		sc.close();
 	}

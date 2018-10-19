@@ -15,7 +15,7 @@ public class HeronExemple {
 		Triangle x, y; 
 		x = new Triangle();
 		y = new Triangle();
-		
+
 		System.out.println("Digite as áreas referentes ao triângulo X:");
 		x.a = sc.nextDouble();
 		x.b = sc.nextDouble();
@@ -27,8 +27,7 @@ public class HeronExemple {
 		y.c = sc.nextDouble();
 
 		// fórmula de Heron > calcular o tamanho de cada àrea do triangulo
-		
-		
+
 		// triangulo X	
 		// x = objeto
 		// area = método utilizado (dentro de Triangle) para calcular a area do triangulo.
@@ -39,7 +38,7 @@ public class HeronExemple {
 		// Math.sqrt() = raiz quadrada()
 		// y.area() = chamando o método area usando como parâmetro o triangulo y
 		double areaY = y.area();
-		
+
 		//encerra o Scanner.
 		sc.close();
 
