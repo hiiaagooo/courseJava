@@ -5,6 +5,16 @@ public class Product {
 	public double price;
 	public int quantity;
 	
+	// criando um construtor
+	// é executado no momento da instanciação "Product product = new Product();"
+	// as variaveis criadas(String name, double price, int quantity) para serem referenciadas aos objetos da classe (this.),
+	// não precisariam ter o mesmo nome que as váriaveis da classe.
+	public Product(String name, double price, int quantity) {
+		this.name = name;
+		this.price = price;
+		this.quantity = quantity;
+	}
+
 	// metodo para calcular preço x quantidade, retorna um double
 	public double totalValueInStock() {
 		 return price * quantity;

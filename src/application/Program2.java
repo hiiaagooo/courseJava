@@ -11,20 +11,21 @@ public class Program2 {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		// instanciar o objeto "product"
-		Product product = new Product();
-		
 		// ******* Leitura dos dados ******
 		System.out.println("Enter to new Product:");
 		System.out.print("Name:");
 		// utilizando os atributos (de product) no scanner. 
-		product.name = sc.nextLine();
+		String name = sc.nextLine();
 		// Price
 		System.out.print("Price: ");
-		product.price = sc.nextDouble();
+		double price = sc.nextDouble();
 		// Quantity in Stock
 		System.out.print("Quantity in Stock:");
-		product.quantity = sc.nextInt();
+		int quantity = sc.nextInt();
+		
+		// instanciar o objeto "product", utilizando o construtor
+		// vantagens: iniciar a instância com objetos preenchidos com os valores digitados acima.
+		Product product = new Product(name, price, quantity);
 		
 		// ******* Fim da Leitura dos dados ******
 		
@@ -34,7 +35,7 @@ public class Program2 {
 		// Adicionando quantidades.
 		System.out.println();
 		System.out.print("Entry to products quantity to add:");
-		int quantity = sc.nextInt();
+		quantity = sc.nextInt();
 		product.addProducts(quantity);
 		
 		// valor atualizado
