@@ -43,19 +43,19 @@ public class ListFuncionarios {
 		System.out.println("Quantos funcionários serão registrados? ");
 		int n = sc.nextInt();
 		
-		
 		for (int i = 1; i <= n; i++) {
 			System.out.println();
-			
 			System.out.println("Funcionario #" + i + ": ");
 			
 			// id
 			System.out.print("Id: ");
 			int id = sc.nextInt();
-			// nome
+
+			//name
 			System.out.print("Name: ");
 			sc.nextLine();
 			String name = sc.nextLine();
+			
 			// salario
 			System.out.print("Salary: ");
 			double salary = sc.nextDouble();
@@ -75,8 +75,7 @@ public class ListFuncionarios {
 		// Caso não encontre o ID
 		if (emp == null) {
 			System.out.println("ID não encontrado!");
-		}
-		else {
+		} else {
 			System.out.print("Entre com a porcentagem de aumento desejada: ");
 			double porcentagem = sc.nextDouble();
 			emp.increaseSalary(porcentagem);
@@ -85,12 +84,12 @@ public class ListFuncionarios {
 		// Parte 3 - Incrementando o aumento 
 		System.out.println();
 		System.out.println("Lista de Funcionarios: ");
+		
 		for (Funcionarios obj: list) {
 			System.out.println(obj);
 		}
 		
 		sc.close();
-
 	}
 
 }
