@@ -11,10 +11,11 @@ public class Worker {
 	private Double BaseSalary;
 
 	private Department department;
-	
-	// quando eu possuir uma composição 'tem muitos', nesse caso, uma lista, não devo incuir no constructor
+
+	// quando eu possuir uma composição 'tem muitos', nesse caso, uma lista, não
+	// devo incuir no constructor
 	private List<HourContract> contracts = new ArrayList<>();
-	
+
 	public Worker() {
 	}
 
@@ -64,7 +65,5 @@ public class Worker {
 	public void setContracts(List<HourContract> contracts) {
 		this.contracts = contracts;
 	}
-	
-	
-	
+
 }

@@ -1,6 +1,5 @@
 package entities;
 
-
 import java.util.Date;
 
 import entities.enums.OrderStatus;
@@ -9,7 +8,7 @@ public class Orders {
 	private Integer id;
 	private Date moment;
 	private OrderStatus status;
-	
+
 	public Orders() {
 	}
 
@@ -47,7 +46,5 @@ public class Orders {
 	public String toString() {
 		return "Orders [id=" + id + ", moment=" + moment + ", status=" + status + "]";
 	}
-	
-	
-	
+
 }
